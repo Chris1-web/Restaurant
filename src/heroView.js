@@ -12,6 +12,13 @@ const heroView = function () {
             your personal taste. Your satisfaction is our priority
           </p>
         </article>
+        <footer>
+        <p>
+        <span>Copyright &copy; 2022 Christianah</span>
+          <a href="https://github.com/Chris1-web/Restaurant" target="_blank"><img src="../src/icons/github.png" alt="git hub icon"/></a>
+        </p>
+      </footer>
+    </div>
     `;
   container.insertAdjacentHTML("beforeend", html);
 };

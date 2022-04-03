@@ -162,6 +162,89 @@ header .active {
   background-color: #e67d2286;
 }
 
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  border: 1rem solid #e67d2286;
+  padding: 2rem;
+  max-width: 100rem;
+  margin: 5rem auto;
+}
+
+.left-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-items: center;
+}
+
+.left-contact img,
+footer img {
+  width: 3rem;
+}
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+input,
+textarea {
+  padding: 1rem 2rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 0;
+  border: 0.1rem solid grey;
+  border-radius: 1rem;
+  outline: none;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input:focus {
+  box-shadow: 0 0 1.5rem 0.4rem rgba(12, 11, 11, 0.06);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form button {
+  padding: 1rem 5rem;
+  width: 100%;
+  background-color: #e67d2286;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: black;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.form button:hover {
+  border: 0.2rem solid #e67d2286;
+  color: black;
+  background-color: white;
+}
+
 .hide {
   display: none;
+}
+
+footer {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer p {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
