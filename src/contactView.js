@@ -1,3 +1,10 @@
+import phone from "./icons/phone-call.png";
+import address from "./icons/address.png";
+import mailer from "./icons/mail.png";
+import facebook from "./icons/facebook.png";
+import instagram from "./icons/instagram.png";
+import twitter from "./icons/twitter.png";
+
 const contactView = function () {
   const container = document.querySelector("#content");
   const html = `<div class="contact-container hide">
@@ -11,22 +18,22 @@ const contactView = function () {
       </div>
       <ul class="contact-info">
         <li>
-          <img src="../src/icons/phone-call.png" alt="phone icon" />
+          <img src="../src/icons/phone-call.png" alt="phone icon" class="phone-icon"/>
           <span>+47 333 78 901</span>
         </li>
         <li>
-          <img src="../src/icons/mail.png" alt="mail icon" />
+          <img src="../src/icons/mail.png" alt="mail icon" class="mail-icon"/>
           <span> hello@helloworld.com</span>
         </li>
         <li>
-          <img src="../src/icons/address.png" alt="address icon" />
+          <img src="../src/icons/address.png" alt="address icon" class="address-icon"/>
           <span> 102 street 2172 DON</span>
         </li>
       </ul>
       <div class="social-links">
-        <img src="../src/icons/facebook.png" alt="facebook icon" />
-        <img src="../src/icons/twitter.png" alt="twitter icon" />
-        <img src="../src/icons/instagram.png" alt="instagram icon" />
+        <img src="../src/icons/facebook.png" alt="facebook icon" class="facebook-icon" />
+        <img src="../src/icons/twitter.png" alt="twitter icon" class="twitter-icon"/>
+        <img src="../src/icons/instagram.png" alt="instagram icon" class="instagram-icon"/>
       </div>
     </div>
     <div class="right-contact">
@@ -77,6 +84,18 @@ const contactView = function () {
       </footer>
   </div>`;
   container.insertAdjacentHTML("beforeend", html);
+  const facebookIcon = document.querySelector(".facebook-icon");
+  const twitterIcon = document.querySelector(".twitter-icon");
+  const instagramIcon = document.querySelector(".instagram-icon");
+  const phoneIcon = document.querySelector(".phone-icon");
+  const mailIcon = document.querySelector(".mail-icon");
+  const addressIcon = document.querySelector(".address-icon");
+  facebookIcon.src = facebook;
+  twitterIcon.src = twitter;
+  instagramIcon.src = instagram;
+  phoneIcon.src = phone;
+  mailIcon.src = mailer;
+  addressIcon.src = address;
 };
 
 export default contactView;

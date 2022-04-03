@@ -1,3 +1,10 @@
+import Pizza from "./icons/pizza.png";
+import soup from "./icons/soup.png";
+import spaghetti from "./icons/spaghetti.png";
+import chicken from "./icons/chicken-leg.png";
+import burger from "./icons/burger.png";
+import coffee from "./icons/coffee-cup.png";
+
 const menuView = function () {
   const container = document.querySelector("#content");
   const html = `
@@ -14,8 +21,8 @@ const menuView = function () {
                   <p class="price">$50</p>
                   <button>Order</button>
                 </div>
-                <div class="menu1-image">
-                  <img src="../src/icons/soup.png" alt="steak soup icon" />
+                <div>
+                  <img alt="steak soup icon" class="menu1-image"/>
                 </div>
               </div>
               <div class="menu">
@@ -29,8 +36,8 @@ const menuView = function () {
                   <p class="price">$60</p>
                   <button>Order</button>
                 </div>
-                <div class="menu2-image">
-                  <img src="../src/icons/pizza.png" alt="" />
+                <div>
+                  <img alt="" class="menu2-image"/>
                 </div>
               </div>
               <div class="menu">
@@ -44,8 +51,8 @@ const menuView = function () {
                   <p class="price">$70</p>
                   <button>Order</button>
                 </div>
-                <div class="menu3-image">
-                  <img src="../src/icons/spaghetti.png" alt="" />
+                <div>
+                  <img alt="" class="menu3-image"/>
                 </div>
               </div>
             </div>
@@ -61,8 +68,8 @@ const menuView = function () {
                   <p class="price">$90</p>
                   <button>Order</button>
                 </div>
-                <div class="menu4-image">
-                  <img src="../src/icons/burger.png" alt="" />
+                <div>
+                  <img alt="" class="menu4-image"/>
                 </div>
               </div>
               <div class="menu">
@@ -76,8 +83,8 @@ const menuView = function () {
                   <p class="price">$40</p>
                   <button>Order</button>
                 </div>
-                <div class="menu5-image">
-                  <img src="../src/icons/chicken-leg.png" alt="" />
+                <div>
+                  <img alt="" class="menu5-image"/>
                 </div>
               </div>
               <div class="menu">
@@ -91,8 +98,8 @@ const menuView = function () {
                   <p class="price">$70</p>
                   <button>Order</button>
                 </div>
-                <div class="menu6-image">
-                  <img src="../src/icons/coffee-cup.png" alt="" />
+                <div>
+                  <img alt="" class="menu6-image"/>
                 </div>
               </div>
             </div>
@@ -100,6 +107,18 @@ const menuView = function () {
     `;
   // return html;
   container.insertAdjacentHTML("beforeend", html);
+  const imageOne = document.querySelector(".menu1-image");
+  const imageTwo = document.querySelector(".menu2-image");
+  const imageThree = document.querySelector(".menu3-image");
+  const imageFour = document.querySelector(".menu4-image");
+  const imageFive = document.querySelector(".menu5-image");
+  const imageSix = document.querySelector(".menu6-image");
+  imageOne.src = soup;
+  imageTwo.src = Pizza;
+  imageThree.src = spaghetti;
+  imageFour.src = burger;
+  imageFive.src = chicken;
+  imageSix.src = coffee;
 };
 
 export default menuView;

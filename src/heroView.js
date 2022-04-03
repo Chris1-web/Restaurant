@@ -1,3 +1,5 @@
+import Icon from "./icons/github.png";
+
 const heroView = function () {
   const container = document.querySelector("#content");
   const html = `
@@ -15,12 +17,16 @@ const heroView = function () {
         <footer>
         <p>
         <span>Copyright &copy; 2022 Christianah</span>
-          <a href="https://github.com/Chris1-web/Restaurant" target="_blank"><img src="../src/icons/github.png" alt="git hub icon"/></a>
+          <a href="https://github.com/Chris1-web/Restaurant" target="_blank">
+          <img alt="github icon" class="github-icon"/>
+          </a>
         </p>
       </footer>
     </div>
     `;
   container.insertAdjacentHTML("beforeend", html);
+  const github = document.querySelector(".github-icon");
+  github.src = Icon;
 };
 
 export default heroView;
