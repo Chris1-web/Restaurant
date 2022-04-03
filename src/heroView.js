@@ -11,7 +11,7 @@ const heroView = function () {
             Our Restaurant steak is delicious. It is a standard meal grilled to
             your personal taste. Your satisfaction is our priority
           </p>
-        </article>
+        </article>go
         <footer>
         <p>
         <span>Copyright &copy; 2022 Christianah</span>
