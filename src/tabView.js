@@ -6,6 +6,7 @@ const tabView = function () {
   const menuContainer = document.querySelector(".menu-container");
   const contactContainer = document.querySelector(".contact-container");
 
+  // event listener for showing each section according to click request
   home.addEventListener("click", function () {
     homeContainer.classList.remove("hide");
     home.classList.add("active");
