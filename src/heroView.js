@@ -1,5 +1,5 @@
 import Icon from "./icons/github.png";
-import heroHTML from "./heroHTML";
+import { heroHTML } from "./htmlViews";
 
 const heroView = function () {
   // diplay home page html

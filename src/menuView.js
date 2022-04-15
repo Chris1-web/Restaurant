@@ -4,7 +4,7 @@ import spaghetti from "./icons/spaghetti.png";
 import chicken from "./icons/chicken-leg.png";
 import burger from "./icons/burger.png";
 import coffee from "./icons/coffee-cup.png";
-import menuHTML from "./menuHTML";
+import { menuHTML } from "./htmlViews";
 
 const menuView = function () {
   // insert menu html into the DOM

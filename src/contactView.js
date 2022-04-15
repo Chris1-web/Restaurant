@@ -4,7 +4,8 @@ import mailer from "./icons/mail.png";
 import facebook from "./icons/facebook.png";
 import instagram from "./icons/instagram.png";
 import twitter from "./icons/twitter.png";
-import contactHTML from "./contactHTML";
+import gitIcon from "./icons/github.png";
+import { contactHTML } from "./htmlViews";
 
 const contactView = function () {
   // display html for contects page
@@ -16,12 +17,15 @@ const contactView = function () {
   const phoneIcon = document.querySelector(".phone-icon");
   const mailIcon = document.querySelector(".mail-icon");
   const addressIcon = document.querySelector(".address-icon");
+  const githubIcon = document.querySelector(".contact-github-icon");
+
   facebookIcon.src = facebook;
   twitterIcon.src = twitter;
   instagramIcon.src = instagram;
   phoneIcon.src = phone;
   mailIcon.src = mailer;
   addressIcon.src = address;
+  githubIcon.src = gitIcon;
 };
 
 export default contactView;

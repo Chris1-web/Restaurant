@@ -1,12 +1,15 @@
 const tabView = function () {
-  const homeContainer = document.querySelector(".hero-view");
+  // navigations
   const home = document.querySelector(".home");
   const menu = document.querySelector(".menu-nav");
   const contact = document.querySelector(".contact");
+  // containers
+  const homeContainer = document.querySelector(".hero-view");
   const menuContainer = document.querySelector(".menu-container");
   const contactContainer = document.querySelector(".contact-container");
 
   // event listener for showing each section according to click request
+
   home.addEventListener("click", function () {
     homeContainer.classList.remove("hide");
     home.classList.add("active");
